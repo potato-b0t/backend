@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "cls && nodemon --delay 500ms",
-    "build": "cls && tsc"
+    "build": "clear && tsc",
+    "build:win": "cls && tsc",
+    "start": "npm run build && node ./dist/index.js",
+    "start:win": "npm run build:win && node ./dist/index.js"
   },
   "keywords": [],
   "author": "",
